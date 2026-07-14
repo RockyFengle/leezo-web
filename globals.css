@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --amber: #E0913F;
+  --blue: #6FA8C7;
+  --ok: #7FB069;
+  --pa: #10130f;
+  --pa2: #161a14;
+  --pa3: #1c211a;
+  --ln: rgba(255, 255, 255, 0.09);
+  --lndash: rgba(255, 255, 255, 0.16);
+  --tx: rgba(255, 255, 255, 0.92);
+  --tx2: rgba(255, 255, 255, 0.52);
+  --tx3: rgba(255, 255, 255, 0.32);
+}
+
+body {
+  background-color: var(--pa);
+  color: var(--tx);
+}
+
+/* Blueprint grid background */
+.blueprint-bg {
+  background-color: var(--pa);
+  background-image: linear-gradient(var(--ln) 0.5px, transparent 0.5px),
+                    linear-gradient(90deg, var(--ln) 0.5px, transparent 0.5px);
+  background-size: 28px 28px;
+}
